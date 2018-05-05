@@ -1,0 +1,18 @@
+/*
+*
+* custom.css
+*
+* 
+*
+*/
+
+a {
+  color: #0074D9;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #001f3f;
+}

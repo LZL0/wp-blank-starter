@@ -1,0 +1,142 @@
+/*
+
+Theme Name:   wp-blank-starter
+Theme URI:    https://www.codebyrose.com/github/wp-blank
+Author:       Rose S
+Author URI:   https://www.about.me/rosesherwood
+Description:  A reference theme for WordPress with no design.
+Version: 1.1.2
+License: GNU General Public License v2 or later
+License URI: license.txt
+Tags: translation-ready
+Text Domain: wp-blank-starter
+
+-----------------------------------------------------------------------------
+000 CONTENTS
+-----------------------------------------------------------------------------
+001 WordPress Core Classes
+002 Display of Images with Alignment
+003 Overflow Fixes
+004 General Layout
+005 Widgets
+006 Required
+
+*/
+
+/*---------------------------------------------------------------------------
+001 WordPress Utility
+---------------------------------------------------------------------------*/
+.screen-reader-text{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+
+/*---------------------------------------------------------------------------
+002 Display of Images with Alignment
+---------------------------------------------------------------------------*/
+img.alignright { margin-left: 1rem; }
+img.alignleft { margin-right: 1rem; }
+img.aligncenter { margin: 0 auto; }
+.wp-caption-text{
+  font-size: .76em;
+  text-transform: uppercase;
+}
+
+
+/*---------------------------------------------------------------------------
+003 Overflow Fixes
+---------------------------------------------------------------------------*/
+figure, img, input, button {
+  max-width: 100%;
+  overflow: hidden;
+}
+pre{
+  overflow: scroll;
+}
+
+
+/*---------------------------------------------------------------------------
+004 General Layout
+---------------------------------------------------------------------------*/
+.alignright{
+  display:block;
+  float:right;
+}
+.alignleft{
+  display:block;
+  float:left;
+}
+.aligncenter{
+  display:block;
+  margin:0 auto;
+}
+
+
+
+/*---------------------------------------------------------------------------
+005 Widgets
+---------------------------------------------------------------------------*/
+.widget_recent_entries ul{
+  list-style-type: lower-roman;
+}
+.widget_recent_entries li{
+  padding-bottom: .6em;
+}
+.widget_recent_comments ul{
+  list-style-type: none;
+}
+.widget_recent_comments li{
+  padding-bottom: .6em;
+}
+.widget_pages ul{
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.children a{
+  border-bottom: 0 solid rgba(0,0,0,.8);
+}
+.children{
+  padding-bottom:.8em;
+}
+.widget_categories ul{
+  list-style-type: none;
+}
+.widget_categories li{
+  display: inline-block;
+  margin-bottom: .4em;
+}
+.widget_categories a{
+  padding:.2em .4em;
+}
+#wp-calendar{
+  margin: 0 auto;
+}
+.calendar_wrap caption, .calendar_wrap thead, .calendar_wrap tbody, .calendar_wrap tfoot{
+  line-height:1.5em;
+}
+.calendar_wrap caption{
+  text-transform: uppercase;
+}
+.calendar_wrap th{
+  font-weight: normal;
+}
+.calendar_wrap td{
+  padding-right: .4em;
+}
+
+
+/*---------------------------------------------------------------------------
+006 Required
+---------------------------------------------------------------------------*/
+.sticky{}
+.gallery-caption{}
+.bypostauthor{}
